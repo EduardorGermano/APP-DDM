@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/AppGarcom/Configuracoes/Rotas.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,10 +18,58 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.lightBlue,
       ),
 
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(color: Colors.lightBlue),
+              child: Text(
+                "APP Garçom",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text("Configurações"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.add_box),
+              title: const Text("Cadastro de Produto"),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, Rotas.formProduto);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.person_add),
+              title: const Text("Cadastro de Funcionário"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.list),
+              title: const Text("Lista de Produtos"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
+
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
         onPressed: () {
-          Navigator.pushNamed(context, '/form_mesa');
+          Navigator.pushNamed(context, Rotas.formMesa);
         },
         child: const Icon(Icons.add),
       ),
@@ -64,7 +113,7 @@ class HomePage extends StatelessWidget {
                       backgroundColor: Colors.orange,
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, '/form_venda');
+                      Navigator.pushNamed(context, Rotas.formVenda);
                     },
                     child: const Text("Adicionar"),
                   ),
