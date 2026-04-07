@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.settings),
               title: const Text("Configurações"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Rotas.formConfig);
               },
             ),
 
@@ -42,8 +42,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.add_box),
               title: const Text("Cadastro de Produto"),
               onTap: () {
-                Navigator.pop(context);
-                Navigator.pushNamed(context, Rotas.formProduto);
+                Navigator.pushNamed(context, Rotas.formCadProduto);
               },
             ),
 
@@ -51,7 +50,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.person_add),
               title: const Text("Cadastro de Funcionário"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Rotas.formCadFuncionario);
               },
             ),
 
@@ -59,7 +58,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.list),
               title: const Text("Lista de Produtos"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Rotas.formListProduto);
               },
             ),
           ],

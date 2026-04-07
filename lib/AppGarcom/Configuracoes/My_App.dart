@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'Rotas.dart';
+import 'package:flutter_application_1/AppGarcom/Widgets/form_cad_funcionario.dart';
+import 'package:flutter_application_1/AppGarcom/Widgets/form_cad_produto.dart';
+import 'package:flutter_application_1/AppGarcom/Widgets/form_config.dart';
+import 'package:flutter_application_1/AppGarcom/Widgets/form_edit_produto.dart';
+import 'package:flutter_application_1/AppGarcom/Widgets/form_list_produto.dart';
 import 'package:flutter_application_1/AppGarcom/Widgets/form_fechar_venda.dart';
 import 'package:flutter_application_1/AppGarcom/Widgets/form_produto.dart';
 import 'package:flutter_application_1/AppGarcom/Widgets/form_venda.dart';
@@ -24,6 +29,11 @@ class MyApp extends StatelessWidget {
         Rotas.formVenda: (context) => const FormVenda(),
         Rotas.formProduto: (context) => const FormProduto(),
         Rotas.formFecharVenda: (context) => const FormFecharVenda(),
+        Rotas.formCadFuncionario: (context) => const FormCadFuncionario(),
+        Rotas.formCadProduto: (context) => const FormCadProduto(),
+        Rotas.formConfig: (context) => const FormConfig(),
+        Rotas.formEditProduto: (context) => const FormEditProduto(),
+        Rotas.formListProduto: (context) => const FormListProduto(),
       },
     );
   }
