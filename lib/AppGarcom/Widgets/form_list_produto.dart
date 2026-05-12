@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/AppGarcom/Configuracoes/Rotas.dart';
+import 'package:flutter_application_1/AppGarcom/configuracoes/Rotas.dart';
 
 class FormListProduto extends StatelessWidget {
   const FormListProduto({super.key});

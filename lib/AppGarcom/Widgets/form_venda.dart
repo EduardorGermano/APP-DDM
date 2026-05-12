@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/AppGarcom/Configuracoes/Rotas.dart';
+import 'package:flutter_application_1/AppGarcom/configuracoes/Rotas.dart';
 
 class FormVenda extends StatefulWidget {
   const FormVenda({super.key});
