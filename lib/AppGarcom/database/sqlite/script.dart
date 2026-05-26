@@ -1,7 +1,7 @@
 class DatabaseSql {
   DatabaseSql._();
 
-  static const String criarTabelaMesa = '''
+  static const String criarTabelas = '''
     CREATE TABLE mesa (
       id INTERGER PRIMARY KEY AUTOINCREMENT,
       nome_cliente TEXT NOT NULL,
